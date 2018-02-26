@@ -1,8 +1,3 @@
-# app
+# Flutter SDK - Boilerplate
 
-A new Flutter project.
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+Start flutter coding the base boilerplate with Routes, Auth and Http services,

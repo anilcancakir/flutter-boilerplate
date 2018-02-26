@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   new App(
-    environment: 'local',
-    baseUri: 'http://localhost'
+    environment: 'production',
+    baseUri: 'https://example.com'
   ).run(runApp);
 }
