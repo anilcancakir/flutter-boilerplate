@@ -1,4 +1,4 @@
-import 'package:app/pages/home.page.dart';
+import 'package:app/pages/auth/login.page.dart';
 import 'package:flutter/material.dart';
 
 class AppWidget extends StatefulWidget {
@@ -13,7 +13,7 @@ class _AppWidgetState extends State<AppWidget> {
   Widget build(BuildContext context) {
     return new MaterialApp(
       title: 'App',
-      home: new HomePage(),
+      home: new LoginPage(),
     );
   }
 }
