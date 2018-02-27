@@ -1,5 +1,6 @@
 import 'package:app/app/app.widget.dart';
 import 'package:app/routes/app.routes.dart';
+import 'package:app/routes/auth.routes.dart';
 import 'package:app/services/http.service.dart';
 import 'package:fluro/fluro.dart';
 
@@ -26,13 +27,18 @@ class App {
     );
 
     // Create a router.
-    final router = new Router();
+    final Router router = new Router();
 
-    // Init routes.
+    // Init and set app router.
+    App.router = this.initializeRoutes(router);
+  }
+
+  // Let's init our routes.
+  Router initializeRoutes(Router router) {
     new AppRoutes(router);
+    new AuthRoutes(router);
 
-    // Set app router.
-    App.router = router;
+    return router;
   }
 
   // App run.

@@ -1,4 +1,4 @@
-import 'package:app/app/app.dart';
+import 'package:app/helpers.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
       ),
       body: new Center(
           child: new RaisedButton(onPressed: () {
-            App.router.navigateTo(context, 'about');
+            navigate(context, 'about');
           }, child: new Text('About'))
       ),
     );
